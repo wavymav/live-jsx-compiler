@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monaco;
+}
+
+header {
+  display: block;
+  height: 10vh;
+  overflow: auto;
+  background-color: #f4ada6;
+  color: #f00;
+  font-size: 12px;
+}
+
+.container {
+  height: 90vh;
+  display: flex;
+}
+
+pre {
+  background-color: #f4f4f4;
+}
+
+pre, textarea {
+  width: 50%;
+  font-family: monaco;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+  color: #222;
+}
+
+textarea:focus { outline: 0 }
