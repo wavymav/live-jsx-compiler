@@ -4,6 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
+    "deploy": "surge -p public -d live-jsx.surge.sh",
     "start": "webpack-dev-server --progress --colors"
   },
   "repository": {
@@ -20,6 +21,7 @@
   "dependencies": {
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
+    "surge": "0.17.3",
     "webpack": "^1.12.8",
     "webpack-dev-server": "^1.12.1"
   },
