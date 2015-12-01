@@ -17,7 +17,8 @@ class App extends React.Component {
       this.setState({
         output: babel.transform(code, {
           stage: 0,
-          loose: 'all'
+          loose: 'all',
+          comments: true
         }).code,
         err: ''
       })
@@ -29,7 +30,6 @@ class App extends React.Component {
   render() {
     return(
       <div>
-        <header>{this.state.err}</header>
         <div className="container">
           <textarea
             onChange={this.update}
@@ -39,8 +39,9 @@ class App extends React.Component {
             {this.state.output}
           </pre>
         </div>
+        <footer>{this.state.err}</footer>
       </div>
-     );
+    );
   }
 }
 

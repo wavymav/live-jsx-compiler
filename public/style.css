@@ -4,7 +4,7 @@ body {
   font-family: monaco;
 }
 
-header {
+footer {
   display: block;
   height: 10vh;
   overflow: auto;
